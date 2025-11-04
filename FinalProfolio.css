@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(180deg, #F8EEDC 0%, #FFFFFF 100%);
+    background-attachment: fixed;
+}
+.header_main_div{
+ 
+    width: 100%;
+    display: flex;
+    gap: 350px;
+    padding-left: 20px;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+}
+.header_button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 20px;
+    height: 25px;
+    font-family: 'Cinzel';
+}
+.header_list{
+    display: flex;
+    gap:50px
+}
+.logo_name_span{
+ 
+}
+.front_page_img_div{
+    text-align: center;
+
+}
+.front_page_div{
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+}
+.front_page_contants h2{
+    font-family: 'Cinzel';
+    font-size: 70px;
+}
+
+
+.front_page_img_div{
+    
+}
+.front_page_contants11{
+    top: 0;
+}
+
+.front_page_img_div_heading{
+    font-family:  'Cinzel';
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+.front_page_contants_heading_para{
+    justify-content: center;
+    width: 250px;
+    font-family:'Tinos ital';
+    margin-top: 150px;
+    font-weight: bold;
+    
+}
+.front_page_contants_heading1{
+    margin-top: 150px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.front_page_contants_heading1_span{
+    font-size: 50px;
+    font-family: 'Tinos ital';
+    letter-spacing: 2px;
+}
+.project_heading{
+    text-align: center;
+    letter-spacing: 20px;
+    
+}
+.project_main_div1{
+   
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.project_main_div11{
+   
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: blanchedalmond ;
+}
+.project_main_div12{
+ 
+     width: 500px;
+    border-radius: 10px;
+    text-align: center;.
+}
+.calculater_heading{
+    font-weight: bold;
+    font-size: 30px;
+}
