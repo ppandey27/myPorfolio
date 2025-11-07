@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        button {
+            font-size: 20px;
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+
+        }
+
+        input {
+            width: 350px;
+            height: 50px;
+            font-size: 30px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 2px solid red; text-align: center; ">
+        <table style="border: 2px solid red; height: 250px; width: 250px; font-size: 20px;  margin: auto;">
+            <tr>
+                <th colspan="3">
+                    <input type="text" id="inputbox" required>
+                <td><button onclick="hatao()">C</button></td>
+                </th>
+            </tr>
+
+            <tr>
+                <td><button onclick="calculate('ROOT')">Root</button></td>
+                <td><button onclick="calculate('%')">%</button></td>
+                <td><button onclick="calculate('/')"> /</button></td>
+                <td><button onclick="hatao()">OFF</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate('7')">7</button></td>
+                <td><button onclick="calculate('8')">8</button></td>
+                <td><button onclick="calculate('9')">9</button></td>
+                <td><button onclick="calculate('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate('6')">6</button></td>
+                <td><button onclick="calculate('5')">5</button></td>
+                <td><button onclick="calculate('4')">4</button></td>
+                <td><button onclick="calculate('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate('3')">3</button></td>
+                <td><button onclick="calculate('2')">2</button></td>
+                <td><button onclick="calculate('1')">1</button></td>
+                <td><button onclick="cal()">=</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate('0')">0</button></td>
+                <td><button onclick="calculate('.')">.</button></td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    function calculate(Num) {
+        document.getElementById('inputbox').value += Num
+
+    }
+    function cal() {
+        let ans = document.getElementById('inputbox').value
+        let res = math.evaluate(ans)
+        document.getElementById('inputbox').value = res
+    }
+    function hatao() {
+        document.getElementById('inputbox').value = ""
+    }
+
+</script>
+
+</html>
